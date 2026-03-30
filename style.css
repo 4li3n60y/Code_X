@@ -24,6 +24,7 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
+  font-size: larger;
 }
 
 .dark-mode {
@@ -148,4 +149,23 @@ select{
     font-weight: 600;
     cursor: pointer;
     transition: var(--background) 0.2s ease;
+}
+
+@media (max-width: 600px){
+    body{
+        font-size: 19px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+    }
+
+     button{
+        width: 2rem;
+        padding: 0.75rem;
+     }
+
+     container {
+        width: 100%;
+        padding: 0.75rem;
+     }
 }
