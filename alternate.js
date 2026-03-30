@@ -18,26 +18,14 @@ async function alternate() {
   console.log(`command is shell?: ${isShell}`);
 
   try {
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    const response = await fetch("https://myopenrouter-api-mlor.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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" // paste your key here
       },
       body: JSON.stringify({
-        model: "openai/gpt-4o-mini", 
-        messages: [
-          {
-            role: "system",
-            content: isShell
-              ? "You are a shell command explainer. Break down the command step by step keeping it short yet clear."
-              : "You are a " + mode + " programming code explainer. Explain the snippet keeping it short yet clear. you should also give responce with lines starting from the start rather than a paragraph"
-          },
-          {
-            role: "user",
-            content: code
-          }
-        ]
+        code: code,
+        mode: mode
       })
     });
 
@@ -86,5 +74,3 @@ function selectMode(){
   document.getElementById("languageImage").src = place;
 
 }
-
-
