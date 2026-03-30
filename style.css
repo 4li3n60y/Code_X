@@ -42,16 +42,16 @@ header {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 1rem;
 }
 
 textarea {
   width: 100%;
-  height: 150px;
+  min-height: 200px;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
@@ -76,7 +76,7 @@ button:hover {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  min-height: 100px;
+  min-height: 200px;
   background: rgba(0,0,0,0.05);
 }
 
