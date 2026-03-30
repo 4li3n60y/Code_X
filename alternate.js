@@ -1,8 +1,22 @@
 function fetchExplainshell(code){
 
+  async function scrapeShell(shellFetch) {
+    const response = await fetch(`https://myopenrouter-api.onrender.com/scrape?url=${shellFetch}&id=help`);
+    const data = await response.json();
+
+    if (data.success) {
+        console.log("Element content:", data.content);
+    } else {
+        console.error("Scrape failed:", data.error);
+    }
+  }
+
+
   code = code.replaceAll(" ", "+")
   let shellFetch = "https://explainshell.com/explain?cmd=" + code;
   let tag = "<a link href=\"" + shellFetch + "\" target=\"_blank\" title=\"opens explainshell\">Click here</a> to view explanation from explainshell.";
+
+  scrapeShell(shellFetch);
 
   document.getElementById("default").innerText = tag;
   document.getElementById("default").innerHTML = tag;
