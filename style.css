@@ -10,6 +10,13 @@
   --secondary: #94a3b8;
 }
 
+a {
+  color: var(--headprimary);
+}
+a:hover {
+  color: #4CAF50;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-light);
