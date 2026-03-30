@@ -18,7 +18,7 @@ async function alternate() {
   console.log(`command is shell?: ${isShell}`);
 
   try {
-    const response = await fetch("https://myopenrouter-api-mlor.onrender.com", {
+    const response = await fetch("https://myopenrouter-api-mlor.onrender.com/explain", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
