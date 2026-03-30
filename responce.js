@@ -69,7 +69,7 @@ async function explainCode() {
       }
       }
 
-      output.innerText = explanation || "No explanation available from any source.\nWait a bit, Ive got you covered 😁😁";
+      output.innerText = explanation || "No explanation available from most sources.\n\nPlease wait";
       alternate();
     }
   } catch (err) {
