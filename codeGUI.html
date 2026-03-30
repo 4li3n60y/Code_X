@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BetterCode ~ Code_X</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/codeXlogo.jpg" type="image/jpg">
+  <link id="blacky" rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <b><h1>Code_X</h1></b>
+    <h2>Code Explainer Aggregator</h2>
+    <label class="switch">
+      <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <div class="container">
+    <!-- Dropdown selector -->
+     <div id="celectorCont">
+    <label for="modeSelect"><pre>Select code language:  </pre></label>
+    <select id="modeSelect" onchange="selectMode()" >
+      <option value="shell">Shell Command</option>
+      <option value="actionscript">ActionScript</option>
+      <option value="ada">Ada</option>
+      <option value="assembly">Assembly</option>
+      <option value="bash">Bash</option>
+      <option value="c">C</option>
+      <option value="c++">C++</option>
+      <option value="cobol">COBOL</option>
+      <option value="carbon">Carbon</option>
+      <option value="clojure">Clojure</option>
+      <option value="coffeescript">CoffeeScript</option>
+      <option value="crystal">Crystal</option>
+      <option value="csharp">Csharp</option>
+      <option value="dart">Dart</option>
+      <option value="delphi">Delphi</option>
+      <option value="elixir">Elixir</option>
+      <option value="elm">Elm</option>
+      <option value="erlang">Erlang</option>
+      <option value="fortran">Fortran</option>
+      <option value="fsharp">Fsharp</option>
+      <option value="gleam">Gleam</option>
+      <option value="golang">Golang</option>
+      <option value="grain">Grain</option>
+      <option value="groovy">Groovy</option>
+      <option value="haskell">Haskell</option>
+      <option value="haxe">Haxe</option>
+      <option value="janet">Janet</option>
+      <option value="java">Java</option>
+      <option value="javascript">JavaScript</option>
+      <option value="julia">Julia</option>
+      <option value="kotlin">Kotlin</option>
+      <option value="lisp">Lisp</option>
+      <option value="lua">Lua</option>
+      <option value="matlab">Matlab</option>
+      <option value="nim">Nim</option>
+      <option value="ocaml">OCaml</option>
+      <option value="oberon+">Oberon+</option>
+      <option value="objc">Objective_C</option>
+      <option value="PHP">PHP</option>
+      <option value="pascal">Pascal</option>
+      <option value="perl">Perl</option>
+      <option value="shell">PowerShell</option>
+      <option value="pyspark">PySpark</option>
+      <option value="pyspark">Pyspark</option>
+      <option value="python">Python</option>
+      <option value="r">R</option>
+      <option value="racket">Racket</option>
+      <option value="raku">Raku</option>
+      <option value="ruby">Ruby</option>
+      <option value="rust">Rust</option>
+      <option value="sas">SAS</option>
+      <option value="sql">SQL</option>
+      <option value="scala">Scala</option>
+      <option value="scheme">Scheme</option>
+      <option value="swift">Swift</option>
+      <option value="tcl">Tcl</option>
+      <option value="typescript">TypeScript</option>
+      <option value="vb.net">VB.NET</option>
+      <option value="vb6">VB6</option>
+      <option value="vba">VBA</option>
+      <option value="vbscript">VBScript</option>
+      <option value="vala">Vala</option>
+      <option value="wren">Wren</option>
+      <option value="zig">Zig</option>
+    </select>
+    <pre>    </pre>
+    <img id="languageImage" src="images/powershell.svg" alt="input language icon">
+     </div>
+    <br>
+    <label for="codeInput">Enter your code:</label>
+    <textarea id="codeInput" placeholder="Paste your code or type command here..."></textarea>
+    <div  id="explainBtn">
+    <button onclick="explainCode() ">Explain</button>
+    </div>
+
+    <div id="output">
+      <div id="responce">Explanation will appear here...</div>
+      <div id="default"> </div>
+    </div>
+  </div>
+
+  <script src="responce.js"></script>
+  <script src="alternate.js"></script>
+
+</body>
+
+</html>

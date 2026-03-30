@@ -1,0 +1,73 @@
+:root{
+    --background: #0f172a;
+    --surface: #1e293b;
+    --primary: #3b82f6;
+    --secondary: #94a3b8;
+    --accent: #22d3ee;
+    --text: #f1f5f9;
+    --radius: 12px;
+    --shadow: 0 4px 12px rgba(0,0,0,0.5);
+    --font: 'Segoe UI', 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    font-family: var(--font);
+    background: var(--surface);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.card{
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.button, header{
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--background) 0.2s ease;
+}
+
+button:hover{
+    background: #2563eb;
+}
+
+input, #output, textarea{
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: var(--radius);
+    padding: 0.6rem;
+    width: 100%;
+    color: var(--text);
+    font-family: var(--font);
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--secondary);
+}
+
+select{
+    background: var(--secondary);
+    color: #000000;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--background) 0.2s ease;
+}
