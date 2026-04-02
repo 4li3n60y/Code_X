@@ -152,6 +152,7 @@ select{
 }
 
 @media (max-width: 600px){
+  /* mobile device css test --> under development */
     body{
         font-size: 19px;
         margin: 0;
